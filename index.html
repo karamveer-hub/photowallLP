@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photowall</title>
+  <link rel="stylesheet" href="lp.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+  <div
+    style="width: 100%;  background: white; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+    <div style="width: 100%;align-self: stretch; flex: 1 1 0; background: white; flex-direction: column; justify-content: flex-end; align-items: flex-start; display: inline-flex">
+      <div class="deskMenu display_flex" style="">
+        <div class="display_flex" style="margin: 0 auto;">
+          <div style="color: white;line-height: 24px;font-size: 18px; word-wrap: break-word" class="campton">Gallery
+          </div>
+          <div style="justify-content: center; align-items: center; gap: 10px; display: flex">
+            <img src="images/Union.svg" style="width: 40px; height: 40px; position: relative;">
+            <div style="color: white;line-height: 24px;font-size: 18px; word-wrap: break-word" class="campton">Photowall
+            </div>
+          </div>
+          <div style="color: white;line-height: 24px;font-size: 18px; word-wrap: break-word" class="campton">Contact
+          </div>
+        </div>
+        <div class="display_flex" style="position: absolute;">
+          <button
+            style="margin:0 10px;border:0.5px solid white;padding:10px;color: white; font-size: 16px;  font-weight: 600; text-transform: uppercase; line-height: 14.40px; letter-spacing: 0.32px; word-wrap: break-word"
+            class="campton">Login</button>
+          <button
+            style="margin:0 10px;border:0.5px solid white;padding:10px;color: white; font-size: 16px;  font-weight: 600; text-transform: uppercase; line-height: 14.40px; letter-spacing: 0.32px; word-wrap: break-word">Get
+            Started</button>
+        </div>
+      </div>
+      <header class="mob-menu " style="background: url('headerBg.png');">
+        <nav class="display_flex">
+          <div class="logo">
+            <div style="justify-content: center; align-items: center; gap: 10px; display: flex">
+              <img src="images/Union.svg" style="width: 40px; height: 40px; position: relative;">
+              <div style="color: white;line-height: 24px;font-size: 18px; word-wrap: break-word" class="campton">
+                Photowall</div>
+            </div>
+          </div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="display_flex_col banner border10pxbm" style="width: 100%;">
+        <div class="display_flex container">
+          <h1 style="color: white;width: 30%;" class="campBold">Fun<br>Begins<br>Here<br><span>Snap, Share, Smile</span>
+          </h1>
+          <div class="thumbnail border10px" style="position: relative;">
+            <img src="images/Image4.png" alt="">
+            <img src="images/play.png" alt=""
+              style="position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);">
+          </div>
+          <video src="images/photowall 2.5.mp4" width="65%" height="100%" controls style="object-fit: cover;"></video>
+
+        </div>
+        <h2 style="color: white;">Exclusive Photo Booths for Your Events</h2>
+        <div>
+          <button style="BACKGROUND:white;letter-spacing: 2px;color: black;" class="btn border10px">TRY FOR FREE <img
+              src="images/arrowRight.png" alt="" style="vertical-align: text-top;"></button>
+        </div>
+      </div>
+      <div class="secondSection border10pxbm"
+        style="width:100%;padding-top: 80px; padding-bottom: 80px;  flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
+        <div
+          style="color: black; line-height: 36px; word-wrap: break-word;font-weight: 600;font-size: 30px;letter-spacing: 0.32px;"
+          class="campton">Why Use PhotoWall?</div>
+        <div style="" class="feature_outer display_flex ">
+          <div style="" class="feature">
+            <img src="images/Icon5.png" />
+            <div
+              style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <strong
+                style="align-self: stretch; height: 60px; color: black; line-height: 27px; word-wrap: break-word">Seamless
+                Experience</strong>
+              <div
+                style="align-self: stretch; color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 21.60px; word-wrap: break-word">
+                Your photo sharing journey gets no friction with our photo booth. Share your photo in just 3 simple
+                clicks.
+              </div>
+            </div>
+          </div>
+          <div style="" class="feature">
+            <img src="images/icon.png" />
+            <div
+              style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <strong
+                style="align-self: stretch; height: 60px; color: black; line-height: 27px; word-wrap: break-word">Your
+                Photo is Safe with us
+              </strong>
+              <div
+                style="align-self: stretch; color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 21.60px; word-wrap: break-word">
+                Share your photo and we’ll keep it safe and encrypted. You can access that anytime from anywhere on the
+                photowall dashboard.
+              </div>
+            </div>
+          </div>
+          <div style="" class="feature">
+            <img src="images/icon3.png" />
+            <div
+              style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <strong
+                style="align-self: stretch; height: 60px; color: black; line-height: 27px; word-wrap: break-word">Highly
+                Interactive
+              </strong>
+              <div
+                style="align-self: stretch; color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 21.60px; word-wrap: break-word">
+                Entertaining your guests is on us. Our interactive photo-booth takes care of your guests.
+              </div>
+            </div>
+          </div>
+          <div style="" class="feature">
+            <img src="images/icon1.png" />
+            <div
+              style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <strong
+                style="align-self: stretch; height: 60px; color: black; line-height: 27px; word-wrap: break-word">Moderation
+              </strong>
+              <div
+                style="align-self: stretch; color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 21.60px; word-wrap: break-word">
+                Content steering is in your hand, you can moderate every single photo to be shared on your photo booth.
+              </div>
+            </div>
+          </div>
+          <div style="" class="feature">
+            <img src="images/icon4.png" />
+            <div
+              style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <strong
+                style="align-self: stretch; height: 60px; color: black; line-height: 27px; word-wrap: break-word">No
+                additional app required</strong>
+              <div
+                style="align-self: stretch; color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 21.60px; word-wrap: break-word">
+                Everything goes easy through our website only. You don't need to download any additional app to use
+                photobooth.
+              </div>
+            </div>
+          </div>
+          <div style="" class="feature">
+            <img src="images/icon2.png" />
+            <div
+              style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <strong
+                style="align-self: stretch; height: 60px; color: black; line-height: 27px; word-wrap: break-word">Meant
+                for you</strong>
+              <div
+                style="align-self: stretch; color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 21.60px; word-wrap: break-word">
+                It is suitable for you in any case… whether it is a wedding, a corporate event or your personal get
+                together. We have options tailored for you</div>
+            </div>
+          </div>
+        </div>
+        <button style="BACKGROUND:white;font-size: 16px;letter-spacing: 2px;color: black;" class="btn border10px">Book
+          Demo <img src="images/arrowRight.png" alt="" style="vertical-align: text-top;"></button>
+      </div>
+      <div class="testimonials display_flex_col border10pxbm" style="width:100%;position: relative;">
+
+        <div style="color: black; font-size: 30px;  line-height: 36px; word-wrap: break-word" class="campBold">See what
+          other users are saying</div>
+        <div style="width:100%;" class="slider container">
+          <div class="testimonials_div border10px"
+            style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 21px; display: inline-flex">
+            <img src="images/Picture.png"
+              style="width: 100px; height: 100px; position: relative; background: #D3D3D3; border-radius: 50px">
+            <div style="color: black; font-size: 20px;   line-height: 24px; word-wrap: break-word;" class="campBold">Mr
+              Lakshay
+            </div>
+            <div
+              style="color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 27.60px; word-wrap: break-word">
+              We recently had the pleasure of using PhotoWall at our corporate event, and it was a resounding success!
+              The QR code scanning feature made it effortless for guests to participate.
+              Your post-event data insights were invaluable for gauging engagement.
+              Kudos to your team for their support; it ensured a seamless experience.
+              In short, PhotoWall elevated our event and left attendees thrilled. I highly recommend PhotoWall for any
+              event looking to add fun and engagement.
+            </div>
+          </div>
+          <div class="testimonials_div border10px"
+            style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 21px; display: inline-flex">
+            <img src="images/Picture3.png"
+              style="width: 100px; height: 100px; position: relative; background: #D3D3D3; border-radius: 50px">
+            <div style="color: black; font-size: 20px;   line-height: 24px; word-wrap: break-word;" class="campBold">Mr
+              Kushagra</div>
+            <div
+              style="color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 27.60px; word-wrap: break-word">
+              Our recent experience with PhotoWall was superb! It provided a seamless photo-sharing experience that was
+              perfect for our event.
+              What stood out most was the simplicity of sharing photos, and we didn't need to download any apps for
+              this.
+              They made our event interactive and enjoyable without any complications. We highly recommend it for anyone
+              seeking an easy, web-based photo-booth solution.
+            </div>
+          </div>
+          <div class="testimonials_div border10px"
+            style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 21px; display: inline-flex">
+            <img src="images/Picture2.png"
+              style="width: 100px; height: 100px; position: relative; background: #D3D3D3; border-radius: 50px">
+            <div style="color: black; font-size: 20px;   line-height: 24px; word-wrap: break-word;" class="campBold">Ms
+              Akanksha Menon
+            </div>
+            <div
+              style="color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 27.60px; word-wrap: break-word">
+              We had PhotoWall at our wedding, and it was absolutely perfect! Sharing photos was incredibly easy, and
+              there was no need for guests to download any additional apps. It was a huge hit with our guests, adding an
+              extra layer of fun and excitement to our special day. The memories captured through PhotoWall will be
+              cherished forever. We highly recommend PhotoWall for any event.
+            </div>
+          </div>
+          <div class="testimonials_div border10px"
+            style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 21px; display: inline-flex">
+            <img src="images/Picture2.png"
+              style="width: 100px; height: 100px; position: relative; background: #D3D3D3; border-radius: 50px">
+            <div style="color: black; font-size: 20px;   line-height: 24px; word-wrap: break-word;" class="campBold">Ms
+              Akanksha Menon
+            </div>
+            <div
+              style="color: black; font-size: 18px; font-family: Lato; font-weight: 300; line-height: 27.60px; word-wrap: break-word">
+              We had PhotoWall at our wedding, and it was absolutely perfect! Sharing photos was incredibly easy, and
+              there was no need for guests to download any additional apps. It was a huge hit with our guests, adding an
+              extra layer of fun and excitement to our special day. The memories captured through PhotoWall will be
+              cherished forever. We highly recommend PhotoWall for any event.
+            </div>
+          </div>
+         
+        </div>
+        <div style="justify-content: center; align-items: center; display: inline-flex">
+          <button style="color: black; font-size: 20px;   line-height: 24px; word-wrap: break-word">See All Testimonials
+            <img src="images/longArrow.png" alt=""> </button>
+        </div>
+      </div>
+      <div class=" display_flex_col fourthSection border10pxbm" style="width:100%;padding: 40px 10px;">
+        <div class="container"
+          style="align-self: stretch;  flex-direction: column; justify-content: center; align-items: center; gap: 40px; display: flex">
+          <div style="color: black; font-size: 30px;   line-height: 36px; word-wrap: break-word" class="campBold">
+            Unleash the power of PhotoWall for your brand</div>
+          <div style="color: black; font-size: 20px;   line-height: 24px; word-wrap: break-word" class="campBold">Click
+            on the steps to know more</div>
+          <div class="display_flex stepsDiv">
+            <div class="steps active" id="1"
+              style="padding: 5px 10px; border-radius: 5px; overflow: hidden; border: 0.50px black solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+              <img style="width: 40px; height: 40px; position: relative;" src="images/capture.png">
+              <div style="color: black;font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Step 1: Capture
+              </div>
+            </div>
+            <div class="steps" id="2"
+              style="padding: 5px 10px; border-radius: 5px; overflow: hidden; border: 0.50px black solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+              <img style="width: 40px; height: 40px; position: relative;" src="images/step2image.png">
+              <div style="color: black;font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Step 2: Scan
+              </div>
+            </div>
+            <div class="steps" id="3"
+              style="padding: 5px 10px; border-radius: 5px; overflow: hidden; border: 0.50px black solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+              <img style="width: 40px; height: 40px; position: relative;" src="images/step3image.png">
+              <div style="color: black;font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Step 3: Upload
+              </div>
+            </div>
+            <div class="steps" id="4"
+              style="padding: 5px 10px; border-radius: 5px; overflow: hidden; border: 0.50px black solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+              <img style="width: 40px; height: 40px; position: relative;" src="images/step4image.png">
+              <div style="color: black;font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Step 4: Enjoy
+              </div>
+            </div>
+          </div>
+          <div class="chess_box_div">
+
+            <div class="border3px chess_box active  " id="1" style="">
+              <img src="images/image1.png" alt="">
+
+            </div>
+            <div class="border3px chess_box " id="2">
+              <img src="images/image2.png" alt="">
+
+
+            </div>
+            <div class="border3px chess_box " id="3">
+              <img src="images/image3.png" alt="">
+
+
+            </div>
+            <div class="border3px chess_box " id="4">
+              <img src="images/image4.png" alt="">
+
+
+            </div>
+          </div>
+
+          <button style="BACKGROUND:#FAA12D;font-size: 16px;letter-spacing: 2px;color: black;"
+            class="btn border10px">GET STARTED <img src="images/arrowRight.png" alt=""
+              style="vertical-align: text-top;"></button>
+        </div>
+      </div>
+      <div class="formSection border10pxbm"
+        style="overflow:hidden;height: calc(600/320 * 100vw);max-height: 770px;width: 100%; padding: 40px 10px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
+        <div class="formBtnDiv border3px"
+          style="max-width:500px;padding: 10px; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex;">
+
+          <div class="form_buttons active border3px"
+            style="flex: 1 1 0; align-self: stretch;justify-content: center; align-items: center; gap: 40px; display: flex"
+            id="contactButton">
+            <div
+              style="   font-weight: 600; text-transform: uppercase; line-height: 14.40px; letter-spacing: 0.32px; word-wrap: break-word"
+              class="btn campton">Contact Form</div>
+          </div>
+          <div class="form_buttons border3px"
+            style="flex: 1 1 0; align-self: stretch;justify-content: center; align-items: center; gap: 40px; display: flex"
+            id="bookDemo">
+            <div
+              style="   font-weight: 600; text-transform: uppercase; line-height: 14.40px; letter-spacing: 0.32px; word-wrap: break-word"
+              class="btn campton">Book a Demo</div>
+          </div>
+        </div>
+        <div style="height:80%;width: 100%;display: flex;justify-content: center;position: relative;">
+
+          <div class="formDiv1 active" style="height: 100%;  padding-top: 64px; padding-bottom: 64px;   ">
+            <div class="contactForm "
+              style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px;">
+              <div
+                style="height: 83px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                <div
+                  style="align-self: stretch; text-align: center; color: black; font-size: 30px;   line-height: 36px; word-wrap: break-word"
+                  class="campBold">Get in touch</div>
+                <div
+                  style="align-self: stretch; text-align: center; color: black; font-size: 26px;  font-weight: 400; line-height: 31.20px; word-wrap: break-word">
+                  Let us know how we can help</div>
+              </div>
+              <div
+                style="height: 351px;width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                <div
+                  style="align-self: stretch; height: 351px;width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                  <div
+                    style="align-self: stretch; height: 69px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <label
+                      style="align-self: stretch; color: black; font-size: 16px; font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Name</label>
+                    <input class="border3px"
+                      style="align-self: stretch; height: 42px; padding: 12px; justify-content: flex-start; align-items: center; gap: 8px; background: none; display: inline-flex"
+                      placeholder="Your full name">
+                  </div>
+                  <div
+                    style="align-self: stretch; height: 69px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <label
+                      style="align-self: stretch; color: black; font-size: 16px; font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Email</label>
+                    <input class="border3px"
+                      style="align-self: stretch; height: 42px; padding: 12px; justify-content: flex-start; align-items: flex-start; gap: 8px; background: none; display: inline-flex"
+                      placeholder="me@company.com">
+                  </div>
+                  <div
+                    style="align-self: stretch; height: 127px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <label
+                      style="align-self: stretch; color: black; font-size: 16px; font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Message</label>
+                    <input class="border3px"
+                      style="align-self: stretch; height: 100px; padding: 12px; justify-content: flex-start; align-items: flex-start; gap: 8px; background: none; display: inline-flex"
+                      placeholder="Your message...">
+                  </div>
+                  <div
+                    style="align-self: stretch; padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: black; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+                    <button
+                      style="color: white;   font-weight: 600; text-transform: uppercase; line-height: 14.40px; letter-spacing: 0.32px; word-wrap: break-word">Send
+                      message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formDiv2" style="height: 100%;  padding-top: 64px; padding-bottom: 64px;   ">
+            <div class="bookForm"
+              style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px;">
+              <div
+                style="height: 83px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                <div
+                  style="align-self: stretch; text-align: center; color: black; font-size: 30px;   line-height: 36px; word-wrap: break-word"
+                  class="campBold">Book a Demo</div>
+                <div
+                  style="align-self: stretch; text-align: center; color: black; font-size: 26px;  font-weight: 400; line-height: 31.20px; word-wrap: break-word">
+                  Let us know how we can help</div>
+              </div>
+              <div
+                style="height: 293px;width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                <div
+                  style="align-self: stretch; height: 293px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                  <div
+                    style="align-self: stretch; height: 69px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <label
+                      style="align-self: stretch; color: black; font-size: 16px; font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Name</label>
+                    <input class="border3px"
+                      style="align-self: stretch; height: 42px; padding: 12px; justify-content: flex-start; align-items: center; gap: 8px; background: none; display: inline-flex"
+                      placeholder="Your full name">
+                  </div>
+                  <div
+                    style="align-self: stretch; height: 69px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <label
+                      style="align-self: stretch; color: black; font-size: 16px; font-family: Lato;  line-height: 19.20px; word-wrap: break-word">Email</label>
+                    <input class="border3px"
+                      style="align-self: stretch; height: 42px; padding: 12px; justify-content: flex-start; align-items: center; gap: 8px; background: none; display: inline-flex"
+                      placeholder="me@company.com">
+                  </div>
+                  <div
+                    style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div
+                      style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                      <div
+                        style="align-self: stretch; color: black; font-size: 16px; font-family: Lato;  line-height: 19.20px; word-wrap: break-word">
+                        Choose Date</div>
+                      <div class="border3px"
+                        style="align-self: stretch; height: 42px; padding: 12px; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="width: 20px; height: 19.50px; position: relative">
+                          <div
+                            style="width: 20px; height: 19.50px; left: 0px; top: 0px; position: absolute; border: 0.75px black solid">
+                          </div>
+                          <div
+                            style="width: 12px; height: 6px; left: 4px; top: 9.50px; position: absolute; background: black">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                      <div
+                        style="align-self: stretch; color: black; font-size: 16px; font-family: Lato;  line-height: 19.20px; word-wrap: break-word">
+                        Choose Time</div>
+                      <div
+                        style="align-self: stretch; height: 42px; padding: 12px;  border: 0.50px black solid; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="width: 20px; height: 20px; position: relative">
+                          <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute">
+                            <div
+                              style="width: 5.61px; height: 10.62px; left: 8.75px; top: 3.75px; position: absolute; background: black">
+                            </div>
+                            <div
+                              style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; background: black">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="align-self: stretch; padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: black; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+                    <button
+                      style="color: white;   font-weight: 600; text-transform: uppercase; line-height: 14.40px; letter-spacing: 0.32px; word-wrap: break-word">BOOK
+                      DEMO</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <footer class="footer">
+        <div style="max-width: 600px;" class="display_flex">
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Home</div>
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Gallery</div>
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Pricing</div>
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            About</div>
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Contact</div>
+        </div>
+        <div style="max-width: 600px;" class="display_flex">
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Step-by-step instructions</div>
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Login</div>
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Get Started</div>
+        </div>
+        <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 20px; display: flex">
+          <div style="flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+            <img src="images/Union.svg" style="width: 40px; height: 40px; position: relative;">
+            <div style="color: white; font-size: 24px;   line-height: 24px; word-wrap: break-word">Photowall</div>
+          </div>
+          <div style="justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
+            <div style="width: 30px; height: 30px;"><img src="images/youtube.png" alt=""></div>
+            <div style="width: 30px; height: 30px;"><img src="images/twitter.png" alt=""></div>
+            <div style="width: 30px; height: 30px;"><img src="images/linkedin.png" alt=""></div>
+            <div style="width: 30px; height: 30px;"><img src="images/insta.png" alt=""></div>
+            <div style="width: 30px; height: 30px;"><img src="images/facebook.png" alt=""></div>
+          </div>
+        </div>
+        <div
+          style="align-self: stretch; justify-content: center; align-items: flex-start; gap: 50px; display: inline-flex">
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Terms & Conditions</div>
+          <div
+            style="text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+            Privacy Policy</div>
+        </div>
+        <div
+          style="align-self: stretch; text-align: center; color: white; font-size: 16px; font-family: Lato; font-weight: 300; line-height: 19.20px; word-wrap: break-word">
+          © 2023 DS Techworks Solutions Pvt Ltd</div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    let contactButton = document.querySelector("#contactButton")
+    let contactForm = document.querySelector(".formDiv1")
+    let bookDemo = document.querySelector("#bookDemo")
+    let bookForm = document.querySelector(".formDiv2")
+    let forms = document.querySelectorAll(".form_active")
+    let steps = document.querySelectorAll(".steps")
+    let chess_box = document.querySelectorAll(".chess_box")
+    contactButton.addEventListener("click", (e) => {
+      bookDemo.classList.remove("active")
+      contactButton.classList.toggle("active")
+      contactForm.classList.remove("nonactive")
+      contactForm.classList.add("active")
+      bookForm.classList.remove("active")
+      bookForm.classList.add("nonactive")
+      contactForm.style.transition = "0.5s"
+      setTimeout(() => {
+        bookForm.style.transition = "0s"
+        bookForm.classList.remove("nonactive")
+      }, 100);
+    })
+    bookDemo.addEventListener("click", (e) => {
+      bookDemo.classList.add("active")
+      contactButton.classList.remove("active")
+      bookForm.classList.add("active")
+      contactForm.classList.remove("active")
+      contactForm.classList.add("nonactive")
+      bookForm.style.transition = "0.5s"
+      setTimeout(() => {
+        contactForm.style.transition = "0s"
+      }, 100);
+    })
+    steps.forEach((item, index) => {
+      item.addEventListener("click", (e) => {
+        for (let i = 0; i < steps.length; i++) {
+          steps[i].classList.remove("active")
+          chess_box[i].classList.remove("active")
+          chess_box[i].classList.remove("nonactive")
+          chess_box[i].classList.remove("left")
+          if (chess_box[i].id == item.id) { chess_box[i].classList.add("active") }
+          else {
+            console.log(i)
+            if (chess_box[i].id < item.id) {
+              chess_box[i]?.classList.add("nonactive")
+            }
+            else
+              chess_box[i]?.classList.add("left")
+          }
+        }
+        item.classList.add("active")
+        item.style.transform = "scale(0.9)"
+        setTimeout(() => {
+          item.style.transform = "scale(1)"
+        }, 100);
+      })
+    })
+    $('.burger').click(function () {
+      $('.nav-links').toggleClass('nav-active');
+      $('.burger').toggleClass('toggle');
+    });
+    let fourthSection = document.querySelector(".fourthSection")
+    let secondSection = document.querySelector(".secondSection")
+    let formDiv = document.querySelector(".formBtnDiv")
+    let testimonials = document.querySelector(".testimonials")
+    let testimonials_div = document.querySelectorAll(".testimonials_div")
+    let footer = document.querySelector(".footer")
+    let formSection = document.querySelector(".formSection")
+    let banner = document.querySelector(".banner")
+    let deskMenu = document.querySelector(".deskMenu")
+    $(document).ready(function () {
+      setTimeout(() => {
+        fourthSection.style.backgroundColor = "#3ABC98"
+        secondSection.style.backgroundColor = "#3ABC98"
+        formDiv.style.backgroundColor = "#3ABC98"
+        testimonials.style.backgroundColor = "#EF3E38"
+        testimonials_div.forEach(item => item.style.backgroundImage = "url('images/Pattern.png')")
+        formSection.style.backgroundColor = "#16AAAA"
+        footer.style.backgroundImage = "linear-gradient(to left, rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.316)), url('images/footerBg.png')";
+        banner.style.background = "url('images/banner.png')";
+        banner.style.backgroundSize = "cover";
+        deskMenu.style.background = "url('images/headerBg.png')";
+      }, 2000);
+    });
+    let thumbnail = document.querySelector(".thumbnail")
+    thumbnail.addEventListener("click", () => {
+      thumbnail.style.display = "none"
+      thumbnail.nextElementSibling.style.display = "block"
+      thumbnail.nextElementSibling.play();
+    })
+    $('.slider').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrow: true,
+            prevArrow: "<img class=' slick-prev' src='images/previous.png'>",
+            nextArrow: "<img class=' slick-next' src='images/next.png'>",
+            autoplay: true,
+            autoplaySpeed: 4000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 1023,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,482 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+}
+
+div {
+  /* width:100% */
+}
+
+img {
+  object-fit: cover;
+}
+
+a,
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  font-weight: 600;
+}
+
+button,
+h2,
+h3,
+strong {
+  font-family: 'Campton Bold' !important;
+}
+
+html,
+div {
+  font-family: 'Lato' !important;
+}
+
+
+@font-face {
+  font-family: 'Campton';
+  src: url('Campton-LightDEMO.woff2') format('woff2'),
+    url('Campton-LightDEMO.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Campton Bold';
+  src: url('Campton-BoldDEMO.woff') format('woff'),
+    url('Campton-BoldDEMO.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Regular.woff') format('woff'),
+    url('Lato-Regular.woff2') format('woff2');
+}
+
+.campton {
+  font-family: 'Campton' !important;
+}
+
+.campBold {
+  font-family: 'Campton Bold' !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.display_flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+
+}
+
+.display_flex_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+html::before {
+  content: none;
+
+}
+
+body {
+  /* overflow: hidden; */
+  width: 100%;
+}
+
+.feature_outer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.feature {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+}
+
+.feature img {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.feature strong {
+  font-size: 22px;
+}
+
+.testimonials {
+  padding: 40px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+  display: flex"
+
+}
+
+.footer {
+  width: 100%;
+  padding: 40px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  display: flex
+}
+
+.chess_box_div {
+  position: relative;
+  height: calc(200/320 * 100vw);
+  width: calc(400/320 * 100vw);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.chess_box {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid black;
+  transition: all 0s;
+  left: 100%;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: calc(18/320 * 100vw);
+  line-height: calc(23/320 * 100vw);
+}
+
+h1 span {
+  font-size: calc(8/320 * 100vw);
+  line-height: calc(6/320 * 100vw);
+}
+
+
+.chess_box.nonactive{
+  left: -100%;
+}
+.chess_box.left{
+  left: 100%;
+}
+.chess_box.active {
+  transition: all 0.5s;
+  left: 0%;
+}
+
+.chess_box>div {
+  width: 100%;
+}
+
+.white_check,
+.black_check {
+  width: 25%;
+  height: calc(410/1920 * 100vw);
+  max-height: 280px;
+}
+
+#contactButton.active,
+#bookDemo.active {
+  background: #EF3E38;
+  color: white;
+}
+
+.bookForm,
+.contactForm {
+  display: inline-flex;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+
+}
+
+.bookForm div,
+.contactForm div {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+}
+.formDiv1,.formDiv2 {
+  width: 100%;
+  display: inline-block !important;
+  position: absolute;
+  left: 100%;
+}
+.formDiv1.active,.formDiv2.active {
+  left: 0%;
+}
+.formDiv1.nonactive{
+  left: -100%;
+}.formDiv2.nonactive {
+  left: 100%;
+}
+
+
+.steps {
+  width: 20%;
+  box-shadow: 5px 5px 0px 0px #00000066;
+  cursor: pointer;
+}
+
+.steps div:nth-child(2) {
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+}
+
+.steps.active {
+  background: #EF3E38;
+  box-shadow: none;
+
+}
+
+.stepsDiv {
+  width: 100%;
+}
+.slick-slider{position: unset !important}
+.slick-next,.slick-prev{
+position: absolute;
+top: 45%;z-index: 999;
+width: 60px;
+}
+.slick-prev{
+  left: 0;
+}
+.slick-next{
+  right: 0;
+}
+.testimonials_div {
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  /* max-width: 290px; */
+  height: 698px !important;
+  text-align: justify;
+  background: url('images/Pattern.png');
+}
+input{
+  color: white;
+  outline: none;
+  font-size: 18px;
+}
+input::placeholder{
+  color: #484848;
+}
+.formBtnDiv {
+  width: 100%;
+}
+
+
+
+.deskMenu {
+  width: 100%;
+  padding: 1rem;
+  display: none;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+  border: 0.50px black solid;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+.deskMenu > div:nth-child(1) {
+  width: 40%;
+  justify-content: space-between;
+}
+.deskMenu > div:nth-child(1) div {
+  /* font-size: 18px; */
+}
+
+.deskMenu > div:nth-child(2) {
+  width: 30%;
+  justify-content: flex-end;
+}
+
+header {
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  height: 60px;
+  padding: 1rem;
+}
+
+.mob-menu {
+  display: block;
+}
+
+nav {
+  position: relative;
+
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 44px;
+  background: #16AAAA;
+  width: 120%;
+}
+
+.nav-links.nav-active {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links li {
+  padding: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.burger {
+  /* display: none; */
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+.cardsDiv {
+  padding: 40px 10px;
+  background: #E3E3E3;
+}
+
+.cards {
+  width: 100%;
+  max-width: 268px;
+}
+
+.cards:nth-child(2),
+.cards:nth-child(1) {
+  width: 100%;
+  max-width: 268px;
+  margin-bottom: 40px;
+}
+
+.chess_box:nth-child(2),
+.chess_box:nth-child(3) {}
+
+.brandsDiv {
+  padding: 40px 10px;
+}
+
+.brands {
+  width: 40%;
+  height: 60px;
+  margin: 10px 0;
+  position: relative;
+  background: white;
+  border: 0.50px black solid
+}
+
+.footer {}
+
+.tickImage {
+  background-image: url('images/Vector.png');
+}
+
+.chess_box img {
+  width: 100%;
+}
+
+.slider {
+  align-items: flex-start;
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding:  40px 10px;
+}
+.banner .display_flex{
+  height: 80%;
+  align-items: flex-start;
+}
+.banner h2 {
+  font-size: calc(12/320 * 100vw);
+  margin: 20px 0;
+}
+.banner .thumbnail{
+  position: relative;
+  height: 100%;
+  width: 65%;
+}
+.banner .thumbnail img:nth-child(1){
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+}
+.banner .thumbnail img:nth-child(2){
+  height: 60px;
+}
+.banner video {
+ display: none;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.btn img {
+  height: 16px;
+}
+
+.border3px {
+  border: 3px solid #420B35;
+  border-radius: 2px;
+}
+.border10px {
+  border: calc(4/320 * 100vw) solid #420B35;
+  border-radius: 2px;
+}
+.border10pxbm{
+  border-bottom: calc(4/320 * 100vw) solid #420B35;
+}

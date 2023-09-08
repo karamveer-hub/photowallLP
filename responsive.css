@@ -1,0 +1,153 @@
+@media  screen and (min-width:350px){
+.testimonials_div{
+  height: 600px !important;
+}
+}
+@media  screen and (min-width:500px){
+.testimonials_div{
+  height: 440px !important;
+}
+}
+@media  screen and (min-width:640px){
+.testimonials_div{
+  height: 800px !important;
+}
+}
+
+@media  screen and (min-width:768px) {
+    .feature{
+        width: 40%;
+        min-height: 200px;
+        justify-content: flex-start; align-items: flex-start;display: flex;
+    }
+    .feature strong{
+        font-size:30px
+     }
+    .deskMenu{
+        display: flex;
+    }
+    .steps{
+        /* width: 40%; */
+    }
+    .stepsDiv{
+        width: 80%;
+      }
+    .cardsDiv{
+        padding: 80px 24px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .formBtnDiv{
+        width: 50%;
+        max-width: 600px;
+    }
+    .formDiv{
+        /* width: 50%; */
+        /* max-width: 600px; */
+    }
+    h1{
+      font-size: 72px;
+      line-height: 76px;
+    }
+    h1 span{
+      font-size: 24px;
+      line-height: 1px;
+    }
+    .banner h2{
+      font-size: 22px;
+    }
+    .slick-next,.slick-prev{
+      width: 80px;
+    }
+    .testimonials_div{
+    width: 40%;
+    /* max-width: 360px; */
+    height: 660px !important;
+
+    }
+    .mob-menu{
+        display: none;
+      }
+      .brandsDiv{
+        padding: 80px 40px;
+      }
+      .brands{
+        width: 25%;
+        max-width: 180px;
+      }
+      .testimonials{
+        padding: 80px 40px;
+      }
+      .footer{
+        padding: 40px;
+      }
+      .feature img{
+        width: 60px;
+        height: 60px;
+     }
+      .steps div:nth-child(2){
+        font-size: 16px;
+        width: 120px;
+      }
+      .banner{
+        height: 90vh;
+        max-height: 800px;
+      }
+      .banner .thumbnail{
+        height: 80%;
+      }
+      .banner .thumbnail img:nth-child(2){
+        height: auto;
+      }
+      .btn{
+        padding: 20px ;
+      }
+      .btn img{
+        height: 20px;
+      }
+      .border10px{
+        border: calc(10/1920 * 100vw) solid #420B35;
+      }
+      .border10pxbm{
+        border-bottom: calc(10/1920 * 100vw) solid #420B35;
+      }
+      .chess_box_div{
+        height: calc(600/1280 * 100vw);
+  width: calc(1200/1280 * 100vw);
+  max-height: 600px;
+  max-width: 1200px;
+      }
+      
+    
+}
+
+@media screen and (min-width:1000px){
+  .btn{
+    font-size: 18px;
+    padding: 20px 30px
+  }
+  .testimonials_div{
+  padding: 40px;
+  height: 860px !important;
+  }
+}
+@media screen and (min-width:1280px){
+  .testimonials_div{
+    height: 698px !important;
+  }
+  h1{
+    font-size: 92px;
+    line-height: 96px;
+  }
+  h1 span{
+    font-size: 34px;
+  }
+  .banner .thumbnail{
+    height: 90%;
+  }
+}
+@media screen and (min-width:1440px){
+  .slick-next,.slick-prev{
+    width: auto;
+  }
+}
